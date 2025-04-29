@@ -91,18 +91,18 @@
 
         adjust_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------
-// | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                   |      |   KP_NUMBER_7   |   KP_NUMBER_8    |   KP_NUMBER_9   |       |       |
-// | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                   |      |   KP_NUMBER_4   |   KP_NUMBER_5    |   KP_NUMBER_6   |       |       |
-// |        | RGB_BRD | RGB_BRI |         |         |         |                   |      |   KP_NUMBER_1   |   KP_NUMBER_2    |   KP_NUMBER_3   |       |       |
-// |        |         |         |         |         |         | RGB_TOG |  |      |      |                 |   KP_NUMBER_0    |                 |       |       |
-//                    |         |         |         |         |         |  |      |      |                 |   KP_NUMLOCK     |                 |
+// | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                   | studio unlock |   KP_NUMBER_7   |   KP_NUMBER_8    |   KP_NUMBER_9   |       |       |
+// | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                   |               |   KP_NUMBER_4   |   KP_NUMBER_5    |   KP_NUMBER_6   |       |       |
+// |        | RGB_BRD | RGB_BRI |         |         |         |                   |               |   KP_NUMBER_1   |   KP_NUMBER_2    |   KP_NUMBER_3   |       |       |
+// |        |         |         |         |         |         | RGB_TOG |  |      |               |                 |   KP_NUMBER_0    |                 |       |       |
+//                    |         |         |         |         |         |  |      |               |                 |   KP_NUMLOCK     |                 |
             display-name = "adjust";
             bindings = <
-&bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                     &none  &kp KP_NUMBER_7 &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none   &none
-&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                                  &none  &kp KP_NUMBER_4 &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none   &none
-&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                            &none  &kp KP_NUMBER_1 &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none   &none
-&none             &none           &none           &none           &none           &none            &rgb_ug RGB_TOG   &out OUT_TOG  &none  &none           &kp KP_NUMBER_0  &none            &none   &none
-                                  &none           &none           &none           &none            &none             &none         &none  &none           &kp KP_NUMLOCK   &none
+&bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                     &studio_unlock  &kp KP_NUMBER_7 &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none   &none
+&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                                  &none           &kp KP_NUMBER_4 &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none   &none
+&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                            &none           &kp KP_NUMBER_1 &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none   &none
+&none             &none           &none           &none           &none           &none            &rgb_ug RGB_TOG   &out OUT_TOG  &none           &none           &kp KP_NUMBER_0  &none            &none   &none
+                                  &none           &none           &none           &none            &none             &none         &none           &none           &kp KP_NUMLOCK   &none
             >;
         };
 
